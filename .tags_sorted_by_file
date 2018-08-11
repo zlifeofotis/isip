@@ -1,0 +1,85 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -O -pthread -Wall$/;"	m
+main	core/isip.c	/^int main(int argc,char** argv){$/;"	f
+DEFAULT_ERRLOG	core/isip.h	/^#define DEFAULT_ERRLOG	/;"	d
+DEFAULT_LOGFILE	core/isip.h	/^#define DEFAULT_LOGFILE /;"	d
+DEFAULT_PIDFILE	core/isip.h	/^#define DEFAULT_PIDFILE /;"	d
+INIT_IP	core/isip.h	/^#define INIT_IP	/;"	d
+INIT_PORT	core/isip.h	/^#define INIT_PORT	/;"	d
+INIT_PROCESS	core/isip.h	/^#define INIT_PROCESS /;"	d
+INIT_THREAD	core/isip.h	/^#define INIT_THREAD /;"	d
+ISIP_ERR	core/isip.h	/^#define ISIP_ERR	/;"	d
+ISIP_OK	core/isip.h	/^#define ISIP_OK	/;"	d
+LISTENQ	core/isip.h	/^#define LISTENQ	/;"	d
+LOG_CRIT	core/isip.h	/^#define LOG_CRIT	/;"	d
+LOG_DEBUG	core/isip.h	/^#define LOG_DEBUG /;"	d
+LOG_INFO	core/isip.h	/^#define LOG_INFO	/;"	d
+LOG_WARNING	core/isip.h	/^#define LOG_WARNING	/;"	d
+MAX_PROCESS	core/isip.h	/^#define MAX_PROCESS /;"	d
+MAX_THREADS	core/isip.h	/^#define MAX_THREADS /;"	d
+chainsem	core/isip.h	/^	sem_t chainsem;$/;"	m	struct:proc_t
+confpath	core/isip.h	/^char* confpath;$/;"	v
+deadprocnum	core/isip.h	/^int deadprocnum;$/;"	v
+errlog	core/isip.h	/^	char* errlog;$/;"	m	struct:__anon2
+ev	core/isip.h	/^	struct epoll_event* ev;$/;"	m	struct:task_t	typeref:struct:task_t::epoll_event
+fd_err	core/isip.h	/^	int fd_err;$/;"	m	struct:__anon2
+fd_log	core/isip.h	/^	int fd_log;$/;"	m	struct:__anon2
+fd_pid	core/isip.h	/^	int fd_pid;$/;"	m	struct:__anon2
+isip_argc	core/isip.h	/^int isip_argc;$/;"	v
+isip_argv	core/isip.h	/^char** isip_argv;$/;"	v
+isip_argv_last	core/isip.h	/^char* isip_argv_last;$/;"	v
+isip_core_t	core/isip.h	/^}isip_core_t;$/;"	t	typeref:struct:__anon2
+isip_msg_t	core/isip.h	/^	}isip_msg_t;$/;"	t	typeref:struct:__anon1
+iskill	core/isip.h	/^int iskill;$/;"	v
+istyle	core/isip.h	/^	char	istyle[4];$/;"	m	struct:__anon1
+len	core/isip.h	/^	int	len;$/;"	m	struct:__anon1
+listenfd	core/isip.h	/^	int	listenfd;$/;"	m	struct:__anon2
+logfile	core/isip.h	/^	char* logfile;$/;"	m	struct:__anon2
+maxprocess	core/isip.h	/^	int maxprocess;$/;"	m	struct:__anon2
+maxthreads	core/isip.h	/^	int maxthreads;$/;"	m	struct:__anon2
+min	core/isip.h	/^#define min(/;"	d
+next	core/isip.h	/^	struct task_t* next;$/;"	m	struct:task_t	typeref:struct:task_t::task_t
+pidfile	core/isip.h	/^	char* pidfile;$/;"	m	struct:__anon2
+proc_t	core/isip.h	/^struct proc_t{$/;"	s
+proc_v	core/isip.h	/^	struct proc_t proc_v;$/;"	m	struct:__anon2	typeref:struct:__anon2::proc_t
+procid	core/isip.h	/^int   procid[MAX_PROCESS];$/;"	v
+rchainlock	core/isip.h	/^	pthread_mutex_t rchainlock;$/;"	m	struct:proc_t
+rchainsem	core/isip.h	/^	sem_t rchainsem;$/;"	m	struct:proc_t
+rhnode	core/isip.h	/^	struct task_t* rhnode;$/;"	m	struct:proc_t	typeref:struct:proc_t::task_t
+serveraddr	core/isip.h	/^	struct sockaddr_in serveraddr;$/;"	m	struct:__anon2	typeref:struct:__anon2::sockaddr_in
+task_t	core/isip.h	/^struct task_t{$/;"	s
+wchainlock	core/isip.h	/^	pthread_mutex_t wchainlock;$/;"	m	struct:proc_t
+wchainsem	core/isip.h	/^	sem_t wchainsem;$/;"	m	struct:proc_t
+whnode	core/isip.h	/^	struct task_t* whnode;$/;"	m	struct:proc_t	typeref:struct:proc_t::task_t
+createproc	core/isip_core_file.c	/^pid_t createproc(isip_core_t* isip_cr_param){$/;"	f
+data_process	core/isip_core_file.c	/^int data_process(isip_core_t* isip_cr_param,struct task_t* node){$/;"	f
+dealdead	core/isip_core_file.c	/^void dealdead(int signo){$/;"	f
+dealkill	core/isip_core_file.c	/^void dealkill(int signo){$/;"	f
+initproctitle	core/isip_core_file.c	/^int initproctitle(){$/;"	f
+isip_chain_free	core/isip_core_file.c	/^struct epoll_event* isip_chain_free(struct task_t* node){$/;"	f
+isip_chain_get	core/isip_core_file.c	/^struct task_t* isip_chain_get(struct task_t* headnode){$/;"	f
+isip_chain_init	core/isip_core_file.c	/^struct task_t* isip_chain_init(int logfd){$/;"	f
+isip_chain_ins	core/isip_core_file.c	/^void isip_chain_ins(struct task_t* headnode,struct task_t* addnode){$/;"	f
+isip_chain_malloc	core/isip_core_file.c	/^struct task_t* isip_chain_malloc(int logfd,struct epoll_event* ev){$/;"	f
+isip_child_process	core/isip_core_file.c	/^void isip_child_process(isip_core_t* isip_cr_param){$/;"	f
+isip_daemon	core/isip_core_file.c	/^void isip_daemon(isip_core_t* isip_cr_param){$/;"	f
+isip_listen	core/isip_core_file.c	/^void isip_listen(isip_core_t* isip_cr_param){$/;"	f
+isip_log_buf	core/isip_core_file.c	/^char* isip_log_buf(int level,char* str){$/;"	f
+isip_process_cycle	core/isip_core_file.c	/^void isip_process_cycle(isip_core_t* isip_cr_param){$/;"	f
+isip_setnoblock	core/isip_core_file.c	/^void isip_setnoblock(int logfd,int fd){$/;"	f
+isip_wr_file	core/isip_core_file.c	/^ssize_t isip_wr_file(int fd,char* str,size_t nbytes){$/;"	f
+pthread_proc	core/isip_core_file.c	/^void* pthread_proc(void* isip_cr_p){$/;"	f
+setproctitle	core/isip_core_file.c	/^void setproctitle(char* title,char* p,int i){$/;"	f
+isip_apply_param	core/isip_param_file.c	/^void isip_apply_param(isip_core_t* isip_cr_param){$/;"	f
+isip_init_param	core/isip_param_file.c	/^void isip_init_param(isip_core_t* isip_cr_param){$/;"	f
+isip_ltrim	core/isip_param_file.c	/^char* isip_ltrim(char* str){$/;"	f
+isip_open_file	core/isip_param_file.c	/^int isip_open_file(char* filepath,int excltag){$/;"	f
+isip_open_log	core/isip_param_file.c	/^void isip_open_log(isip_core_t* isip_cr_param){$/;"	f
+isip_rtrim	core/isip_param_file.c	/^char* isip_rtrim(char* str){$/;"	f
+isip_strtok	core/isip_param_file.c	/^void isip_strtok(char* str,char* left,char *right){$/;"	f
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
